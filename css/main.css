@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .wrapper{
+    width: 80%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: #000;
+}
+
+.card{
+    border: 1px solid black;
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+    margin: 10px;
+} */
+
+.collection{
+    display: flex;
+    list-style: none;
+}
+
+.collection > li{
+    padding: 20px;
+    background-color: green;
+    cursor: pointer;
+    font-family: sans-serif;
+    color: #fff;
+    position: relative;
+}
+
+.collection > li:hover{
+    background-color: yellowgreen;
+}
+
+.sub-collection{
+    background-color: gold;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 103px;
+    display: none;
+}
+
+.sub-collection > li{
+    padding: 20px 0px ;
+    text-align: center;
+    font-size: 20px;
+}
+
+.sub-collection >li:hover{
+    background-color: rgb(192, 165, 8);
+}
+
+.select:hover .sub-collection{
+    display: block;
+}
